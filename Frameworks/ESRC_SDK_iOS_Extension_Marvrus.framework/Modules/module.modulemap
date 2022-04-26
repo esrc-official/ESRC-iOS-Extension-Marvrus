@@ -1,0 +1,11 @@
+framework module ESRC_SDK_iOS_Extension_Marvrus {
+  umbrella header "ESRC_SDK_iOS_Extension_Marvrus.h"
+
+  export *
+  module * { export * }
+}
+
+module ESRC_SDK_iOS_Extension_Marvrus.Swift {
+    header "ESRC_SDK_iOS_Extension_Marvrus-Swift.h"
+    requires objc
+}

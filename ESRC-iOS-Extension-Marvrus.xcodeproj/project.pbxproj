@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C4A1D452667969C00D3D5AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A1D442667969C00D3D5AF /* AppDelegate.swift */; };
+		4C4A1D472667969C00D3D5AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A1D462667969C00D3D5AF /* SceneDelegate.swift */; };
+		4C4A1D492667969C00D3D5AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A1D482667969C00D3D5AF /* ViewController.swift */; };
+		4C4A1D4E2667969E00D3D5AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A1D4D2667969E00D3D5AF /* Assets.xcassets */; };
+		4C4A1D512667969E00D3D5AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A1D4F2667969E00D3D5AF /* LaunchScreen.storyboard */; };
+		4C4A1D6B2667988400D3D5AF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A1D6A2667988400D3D5AF /* README.md */; };
+		4C4BA2112668797E00E7C819 /* esrc_mobilenet_facial_landmark_detection.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A1D5A2667978500D3D5AF /* esrc_mobilenet_facial_landmark_detection.tflite */; };
+		4C4BA2122668797E00E7C819 /* esrc_mobilenet_facial_expression_recognition.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A1D5B2667978500D3D5AF /* esrc_mobilenet_facial_expression_recognition.tflite */; };
+		4C4BA2132668797E00E7C819 /* esrc_ssd_mobilenet_face_detection.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A1D5C2667978500D3D5AF /* esrc_ssd_mobilenet_face_detection.prototxt */; };
+		4C4BA2142668797E00E7C819 /* esrc_ssd_mobilenet_face_detection.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A1D5D2667978500D3D5AF /* esrc_ssd_mobilenet_face_detection.caffemodel */; };
+		4CBCE0B3272BF137003CFECC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCE0B1272BF137003CFECC /* Main.storyboard */; };
+		4CBCE0B9272BF2E9003CFECC /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCE0B8272BF2E9003CFECC /* CircularProgressBarView.swift */; };
+		B30C7BE027C87F6200ED83F3 /* esrc_mobilenet_basic_facial_expression_recognition.tflite in Resources */ = {isa = PBXBuildFile; fileRef = B30C7BDF27C87F6200ED83F3 /* esrc_mobilenet_basic_facial_expression_recognition.tflite */; };
+		B327B96A27D062C40056833C /* esrc_mobilenet_valence_facial_expression_recognition.tflite in Resources */ = {isa = PBXBuildFile; fileRef = B327B96927D062C40056833C /* esrc_mobilenet_valence_facial_expression_recognition.tflite */; };
+		B352E2542817C4C6008C1EC6 /* ESRC_SDK_iOS_Extension_Marvrus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B352E2522817C4B5008C1EC6 /* ESRC_SDK_iOS_Extension_Marvrus.framework */; };
+		B352E2552817C4C6008C1EC6 /* ESRC_SDK_iOS_Extension_Marvrus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B352E2522817C4B5008C1EC6 /* ESRC_SDK_iOS_Extension_Marvrus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B352E2582817C51B008C1EC6 /* ESRC_SDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B352E2562817C507008C1EC6 /* ESRC_SDK_iOS.framework */; };
+		B352E2592817C51B008C1EC6 /* ESRC_SDK_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B352E2562817C507008C1EC6 /* ESRC_SDK_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4C4A1D692667980700D3D5AF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B352E2592817C51B008C1EC6 /* ESRC_SDK_iOS.framework in Embed Frameworks */,
+				B352E2552817C4C6008C1EC6 /* ESRC_SDK_iOS_Extension_Marvrus.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4C4A1D412667969C00D3D5AF /* ESRC-iOS-Extension-Marvrus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ESRC-iOS-Extension-Marvrus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4A1D442667969C00D3D5AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C4A1D462667969C00D3D5AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4C4A1D482667969C00D3D5AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C4A1D4D2667969E00D3D5AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C4A1D502667969E00D3D5AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C4A1D522667969E00D3D5AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C4A1D5A2667978500D3D5AF /* esrc_mobilenet_facial_landmark_detection.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = esrc_mobilenet_facial_landmark_detection.tflite; sourceTree = "<group>"; };
+		4C4A1D5B2667978500D3D5AF /* esrc_mobilenet_facial_expression_recognition.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = esrc_mobilenet_facial_expression_recognition.tflite; sourceTree = "<group>"; };
+		4C4A1D5C2667978500D3D5AF /* esrc_ssd_mobilenet_face_detection.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = esrc_ssd_mobilenet_face_detection.prototxt; sourceTree = "<group>"; };
+		4C4A1D5D2667978500D3D5AF /* esrc_ssd_mobilenet_face_detection.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = esrc_ssd_mobilenet_face_detection.caffemodel; sourceTree = "<group>"; };
+		4C4A1D6A2667988400D3D5AF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4CBCE0B2272BF137003CFECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CBCE0B8272BF2E9003CFECC /* CircularProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
+		B30C7BDF27C87F6200ED83F3 /* esrc_mobilenet_basic_facial_expression_recognition.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = esrc_mobilenet_basic_facial_expression_recognition.tflite; sourceTree = "<group>"; };
+		B327B96927D062C40056833C /* esrc_mobilenet_valence_facial_expression_recognition.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = esrc_mobilenet_valence_facial_expression_recognition.tflite; sourceTree = "<group>"; };
+		B352E2522817C4B5008C1EC6 /* ESRC_SDK_iOS_Extension_Marvrus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ESRC_SDK_iOS_Extension_Marvrus.framework; sourceTree = "<group>"; };
+		B352E2562817C507008C1EC6 /* ESRC_SDK_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ESRC_SDK_iOS.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C4A1D3E2667969C00D3D5AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B352E2582817C51B008C1EC6 /* ESRC_SDK_iOS.framework in Frameworks */,
+				B352E2542817C4C6008C1EC6 /* ESRC_SDK_iOS_Extension_Marvrus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C4A1D382667969C00D3D5AF = {
+			isa = PBXGroup;
+			children = (
+				4C4A1D6A2667988400D3D5AF /* README.md */,
+				4C4A1D63266797E300D3D5AF /* Frameworks */,
+				4C4A1D432667969C00D3D5AF /* ESRC-iOS-Extension-Marvrus */,
+				4C4A1D422667969C00D3D5AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C4A1D422667969C00D3D5AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C4A1D412667969C00D3D5AF /* ESRC-iOS-Extension-Marvrus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C4A1D432667969C00D3D5AF /* ESRC-iOS-Extension-Marvrus */ = {
+			isa = PBXGroup;
+			children = (
+				4C4A1D592667978500D3D5AF /* assets */,
+				4C4A1D442667969C00D3D5AF /* AppDelegate.swift */,
+				4CBCE0B8272BF2E9003CFECC /* CircularProgressBarView.swift */,
+				4C4A1D462667969C00D3D5AF /* SceneDelegate.swift */,
+				4C4A1D482667969C00D3D5AF /* ViewController.swift */,
+				4C4A1D4D2667969E00D3D5AF /* Assets.xcassets */,
+				4CBCE0B1272BF137003CFECC /* Main.storyboard */,
+				4C4A1D4F2667969E00D3D5AF /* LaunchScreen.storyboard */,
+				4C4A1D522667969E00D3D5AF /* Info.plist */,
+			);
+			path = "ESRC-iOS-Extension-Marvrus";
+			sourceTree = "<group>";
+		};
+		4C4A1D592667978500D3D5AF /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				B327B96927D062C40056833C /* esrc_mobilenet_valence_facial_expression_recognition.tflite */,
+				B30C7BDF27C87F6200ED83F3 /* esrc_mobilenet_basic_facial_expression_recognition.tflite */,
+				4C4A1D5A2667978500D3D5AF /* esrc_mobilenet_facial_landmark_detection.tflite */,
+				4C4A1D5B2667978500D3D5AF /* esrc_mobilenet_facial_expression_recognition.tflite */,
+				4C4A1D5C2667978500D3D5AF /* esrc_ssd_mobilenet_face_detection.prototxt */,
+				4C4A1D5D2667978500D3D5AF /* esrc_ssd_mobilenet_face_detection.caffemodel */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		4C4A1D63266797E300D3D5AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B352E2562817C507008C1EC6 /* ESRC_SDK_iOS.framework */,
+				B352E2522817C4B5008C1EC6 /* ESRC_SDK_iOS_Extension_Marvrus.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C4A1D402667969C00D3D5AF /* ESRC-iOS-Extension-Marvrus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C4A1D552667969E00D3D5AF /* Build configuration list for PBXNativeTarget "ESRC-iOS-Extension-Marvrus" */;
+			buildPhases = (
+				4C4A1D3D2667969C00D3D5AF /* Sources */,
+				4C4A1D3E2667969C00D3D5AF /* Frameworks */,
+				4C4A1D3F2667969C00D3D5AF /* Resources */,
+				4C4A1D692667980700D3D5AF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ESRC-iOS-Extension-Marvrus";
+			productName = "ESRC-iOS";
+			productReference = 4C4A1D412667969C00D3D5AF /* ESRC-iOS-Extension-Marvrus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C4A1D392667969C00D3D5AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					4C4A1D402667969C00D3D5AF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 4C4A1D3C2667969C00D3D5AF /* Build configuration list for PBXProject "ESRC-iOS-Extension-Marvrus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C4A1D382667969C00D3D5AF;
+			productRefGroup = 4C4A1D422667969C00D3D5AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C4A1D402667969C00D3D5AF /* ESRC-iOS-Extension-Marvrus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C4A1D3F2667969C00D3D5AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C4BA2112668797E00E7C819 /* esrc_mobilenet_facial_landmark_detection.tflite in Resources */,
+				4C4BA2122668797E00E7C819 /* esrc_mobilenet_facial_expression_recognition.tflite in Resources */,
+				4C4BA2132668797E00E7C819 /* esrc_ssd_mobilenet_face_detection.prototxt in Resources */,
+				4CBCE0B3272BF137003CFECC /* Main.storyboard in Resources */,
+				4C4BA2142668797E00E7C819 /* esrc_ssd_mobilenet_face_detection.caffemodel in Resources */,
+				4C4A1D512667969E00D3D5AF /* LaunchScreen.storyboard in Resources */,
+				B30C7BE027C87F6200ED83F3 /* esrc_mobilenet_basic_facial_expression_recognition.tflite in Resources */,
+				4C4A1D4E2667969E00D3D5AF /* Assets.xcassets in Resources */,
+				4C4A1D6B2667988400D3D5AF /* README.md in Resources */,
+				B327B96A27D062C40056833C /* esrc_mobilenet_valence_facial_expression_recognition.tflite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C4A1D3D2667969C00D3D5AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C4A1D492667969C00D3D5AF /* ViewController.swift in Sources */,
+				4C4A1D452667969C00D3D5AF /* AppDelegate.swift in Sources */,
+				4CBCE0B9272BF2E9003CFECC /* CircularProgressBarView.swift in Sources */,
+				4C4A1D472667969C00D3D5AF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C4A1D4F2667969E00D3D5AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C4A1D502667969E00D3D5AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4CBCE0B1272BF137003CFECC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CBCE0B2272BF137003CFECC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C4A1D532667969E00D3D5AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C4A1D542667969E00D3D5AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C4A1D562667969E00D3D5AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 246;
+				DEVELOPMENT_TEAM = MHUU2ZBJ99;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "ESRC-iOS-Extension-Marvrus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.4.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esrc.ios.extension.marvrus.samples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C4A1D572667969E00D3D5AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 246;
+				DEVELOPMENT_TEAM = MHUU2ZBJ99;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "ESRC-iOS-Extension-Marvrus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.4.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esrc.ios.extension.marvrus.samples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C4A1D3C2667969C00D3D5AF /* Build configuration list for PBXProject "ESRC-iOS-Extension-Marvrus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C4A1D532667969E00D3D5AF /* Debug */,
+				4C4A1D542667969E00D3D5AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C4A1D552667969E00D3D5AF /* Build configuration list for PBXNativeTarget "ESRC-iOS-Extension-Marvrus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C4A1D562667969E00D3D5AF /* Debug */,
+				4C4A1D572667969E00D3D5AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C4A1D392667969C00D3D5AF /* Project object */;
+}
