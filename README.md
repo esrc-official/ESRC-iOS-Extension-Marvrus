@@ -1,4 +1,4 @@
-# ESRC for iOS
+# ESRC Extension Marvrus for iOS
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/esrc-official/ESRC-iOS-Extension-Marvrus)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/esrc-official/ESRC-iOS-Extension-Marvrus)
 [![Commercial License](https://img.shields.io/badge/License-Commercial-brightgreen.svg)](https://github.com/esrc-official/ESRC-iOS-Extension-Marvrus/blob/master/LICENSE.md)
